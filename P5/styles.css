@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; }
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+		
+	.clearer { 
+		display:block; 
+		clear:both; 
+	}
+	
+	
+/* #Basic Styles
+================================================== */
+
+body {
+	background: #151515;
+}
+
+@font-face {
+    font-family: 'AvenirNextRegular';
+    src: url('fonts/avenirnextltproregular.ttf') format('truetype'),
+         url('fonts/avenirnextltproregular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AvenirNextit';
+    src: url('fonts/avenirnextltproit.ttf') format('truetype'),
+         url('fonts/avenirnextltproit.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AvenirNextDemiit';
+    src: url('fonts/avenirnextltprodemiit.ttf') format('truetype'),
+         url('fonts/avenirnextltprodemiit.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AvenirNextDemi';
+    src: url('fonts/avenirnextltprodemi.ttf') format('truetype'),
+         url('fonts/avenirnextltprodemi.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+	
+#container {
+	background:url(images/bg_p5.jpg);
+	width:978px;
+	height:1431px;
+	margin: 0 auto;
+}
+
+#in_container {
+	padding: 70px 35px 70px 35px;
+}
+
+h1 {
+	font-family:'AvenirNextRegular';
+	font-size:40px;
+	color:#343434;
+	padding-bottom:45px;
+	display:block;
+}
+
+h2 {
+	font-family:'AvenirNextRegular';
+	font-size:16px;
+	color:#343434;
+	padding-bottom:30px;
+	text-transform:uppercase;
+}
+
+h3 {
+	font-family:'AvenirNextDemi';
+	font-size:14px;
+	color:#343434;	
+}
+
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-family:'AvenirNextRegular';*/
+	font-size:12px;
+	color:#343434;	
+}
+
+#events_slide {
+	width:100%;
+	height:276px;
+	float:left;
+	position:relative;
+}
+
+#arrow_left {
+	position: absolute;
+	float:left;
+	top:80px;
+	left:0px;
+	z-index:1;
+}
+
+#arrow_right {
+	position: absolute;
+	float:left;
+	top:80px;
+	right:3px;
+	z-index:1;
+}
+
+
+#events_slide .event_thumb {
+	float:left;
+	width:150px;
+	padding-right:1px;
+}
+
+#events_slide .event_thumb img {
+	padding-bottom: 29px;
+}
+
+#events_slide .event_thumb h3 {
+	padding-bottom: 3px;
+	text-transform:uppercase;
+}
+
+#podium {
+	margin-top: 70px;
+	float:left;
+}
+
+#podium #in_podium #results {
+	width:909px;
+	height:272px;
+	background:url(images/podium_bg.png) no-repeat;
+}
+
+#podium #in_podium #melboure {
+	width:906px;
+}
+
+#podium #in_podium #melboure #in_melboure {
+	padding:30px 23px;
+}
+
+#race {
+	float:left;
+	
+}
+
+#race h3 {
+	padding-bottom:3px;
+	
+}
+
+#race h4 {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#515050;
+}
+
+#place {
+	float:left;
+	font-family:'AvenirNextRegular';
+	font-size:40px;
+	line-height:38px;
+	padding-right: 238px;
+	padding-left:114px;
+}
+
+#time {
+	float:left;
+}
+
+#time h3 {
+	padding-bottom: 5px;
+}
+
+#time h4 {
+	color:#616161;
+	font-size:18px;
+	font-family:'AvenirNextRegular';
+}
+
+#podium #in_podium #st_croix {
+	width:906px;
+}
+
+#podium #in_podium #st_croix #in_st_croix {
+	padding:46px 23px;
+}
+
+#in_st_croix #place {
+	padding-left: 108px;
+	padding-right: 227px;
+}
+
+#podium #in_podium #leuven {
+	width:906px;
+}
+
+#podium #in_podium #leuven #in_leuven {
+	padding:46px 23px;
+}
+
+#in_leuven #place {
+	padding-left: 93px;
+	padding-right: 227px;
+}
+
+#athletes_slide {
+	width:100%;
+	height:276px;
+	float:left;
+	position:relative;
+}
+
+#athletes_slide .athletes_thumb {
+	float:left;
+	width:150px;
+	padding-right:1px;
+}
+
+#athletes_slide .athletes_thumb img {
+	padding-bottom: 29px;
+}
+
+#athletes_slide .athletes_thumb h3 {
+	padding-bottom: 7px;
+	text-transform:uppercase;
+	float:left;
+	width:116px;
+}
+
+#athletes_slide .athletes_thumb #description {
+	font-family: Arial, Helvetica, sans-serif;
+	/*font-family:'AvenirNextRegular';*/
+	font-size:12px;
+	color:#343434;
+	width:127px;
+	float:left;
+	line-height:20px;
+}
+
+#athletes {
+	padding-top:67px;
+}
+
+
+.twitter {
+	text-decoration:none;
+	color:#515050;
+	font-weight:bold;
+	padding-top:4px;
+	float:left;
+	
+}
